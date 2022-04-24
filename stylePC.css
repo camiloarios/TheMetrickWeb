@@ -7,6 +7,8 @@
 .nav {
   display: flex;
   justify-content: space-around;
+  height: 100px;
+  align-items: center;
 }
 
 .header-nav {
@@ -15,7 +17,7 @@
   justify-content: space-around;
 }
 
-.left-nav {
+.right-nav {
   list-style: none;
   display: flex;
 }
