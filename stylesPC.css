@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Investigar*/
+}
+
+html{
+  font-size: 62.5%;
+  /*Base 10 px, 1rem*/
+}
+
+body {
+  font-family: system-ui;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.7s;
+  padding: 3rem 5rem;
+  z-index: 1;
+  background-color: #000;
+  opacity: 70%;
+
+}
+
+.logo{
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  transition: 1.5s;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  gap: 3rem;
+}
+
+.nav__link {
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.7s;
+}
+
+.header_down {
+  background: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.header_hide {
+  display: none;
+}
+
+.header_down .logo,
+.header_down .nav__link {
+  color: #000;
+}
+
+.zone1{
+  width: 100%;
+  height: 100vh;
+  background: url("imagenes/fondo-0.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.words {
+  margin: auto;
+  width: 70ch;
+}
