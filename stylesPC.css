@@ -7,6 +7,8 @@
   --colorWhiteNav: #ffffff;
   --colorBlackNav: #0e0e0e;
   --colorWhiteSection: #ffffff;
+  --fontSizePresentatioTitle: 8rem;
+  --fontSizePresentatioSubTitle: 1.8rem;
 }
 
 html{
@@ -83,7 +85,7 @@ p {
   color: var(--colorBlackNav);
 }
 
-.zone1{
+.backgroundImg{
   width: 100%;
   height: 100vh;
   background: url("imagenes/fondo-0.jpg");
@@ -105,7 +107,7 @@ p {
   writing-mode: vertical-lr;
   display: grid;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: var(--fontSizePresentatioSubTitle);
   font-weight: 400;
 }
 
@@ -113,17 +115,62 @@ p {
   background-color: var(--colorWhiteNav);
   grid-column: 1 / 10;
   grid-row: 5 / 7;
-  color: var(--colorBlackNav)
-}
+  color: var(--colorBlackNav);
+  display: flex;
+  /* Ese espacio en blanco ocupa 1/9 parte que es el 11.11% */
+  padding-left: 11.11%;
+  }
 
-.span2 {
-  font-size: 8rem;
-}
+.presentation1__div{
+  background:var(--colorWhiteNav);
+  height: 44px;
+  border: 1px solid var(--colorWhiteNav);
+ /*  box-shadow: black; */
+  border-radius: 24px;
+  max-width: 350px;
+  color: var(--colorBlackNav); 
+  }
 
-.presentation1 .p {
-  font-size: 1.2rem;
+.pre1__div__span {
+    justify-content: space-between;
+ }
+
+
+.presentation1__p1 {
+  font-size: var(--fontSizePresentatioTitle);
   font-weight: bold;
+  margin-bottom: 20px;
+}
 
+.presentation1__p2 {
+  /* word-spacing:2px; */
+  font-weight: bold;
+  font-size: var(--fontSizePresentatioSubTitle);
+}
+
+.pre3__articles {
+  width: 100% ;
+  align-self: center;
+}
+
+.pre3__art__p1 {
+  margin-bottom: 20px;
+ font-weight: bold;
+}
+
+.pre3__art__p2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.pre3__art__p3 {
+   font-size: var(--fontSizePresentatioSubTitle);
+   /* color: #a7a7a7; */
+}
+
+.pre3__articles:hover {
+  color: red;
 }
 
 .words {
