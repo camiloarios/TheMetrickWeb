@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: /* 62.5% esto es para pc para tablet ya cambia */
+  /*Base 10 px, 1rem*/
+}

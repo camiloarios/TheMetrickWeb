@@ -1,0 +1,179 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Investigar*/
+}
+:root {
+  --colorWhiteNav: #ffffff;
+  --colorBlackNav: #0e0e0e;
+  --colorWhiteSection: #ffffff;
+  --fontSizePresentatioTitle: 8rem;
+  --fontSizePresentatioSubTitle: 1.8rem;
+}
+
+html{
+  font-size: 62.5%;
+  /*Base 10 px, 1rem*/
+}
+
+body {
+  font-family: system-ui;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.7s;
+  padding: 3rem 5rem;
+  z-index: 1;
+  background-color: var(--colorBlackNav);
+  opacity: 70%;
+
+}
+
+.logo{
+  color: var(--colorWhiteNav);
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  transition: 1.5s;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  gap: 3rem;
+}
+
+.nav__link {
+  color: var(--colorWhiteNav);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.7s;
+}
+
+.header_down {
+  background: var(--colorWhiteNav);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.header_hide {
+  display: none;
+}
+
+.header_down .logo,
+.header_down .nav__link {
+  color: var(--colorBlackNav);
+}
+
+.backgroundImg{
+  width: 100%;
+  height: 100vh;
+  background: url("imagenes/fondo-0.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: var(--colorWhiteSection);
+  display: grid;
+  grid-template: repeat(6,1fr) /repeat(10,1fr);
+}
+
+.presentation1 {
+  grid-column: 2 / 5;
+  grid-row: 2 / 5;
+}
+
+.presentation2 {
+  grid-column: 10 / 11;
+  grid-row: 2 / 5;
+  writing-mode: vertical-lr;
+  display: grid;
+  align-items: center;
+  font-size: var(--fontSizePresentatioSubTitle);
+  font-weight: 400;
+}
+
+.presentation3 {
+  background-color: var(--colorWhiteNav);
+  grid-column: 1 / 10;
+  grid-row: 5 / 7;
+  color: var(--colorBlackNav);
+  display: flex;
+  /* Ese espacio en blanco ocupa 1/9 parte que es el 11.11% */
+  padding-left: 11.11%;
+  }
+
+.presentation1__div{
+  background:var(--colorWhiteNav);
+  height: 44px;
+  border: 1px solid var(--colorWhiteNav);
+ /*  box-shadow: black; */
+  border-radius: 24px;
+  max-width: 350px;
+  color: var(--colorBlackNav); 
+  }
+
+.pre1__div__span {
+    justify-content: space-between;
+ }
+
+
+.presentation1__p1 {
+  font-size: var(--fontSizePresentatioTitle);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.presentation1__p2 {
+  /* word-spacing:2px; */
+  font-weight: bold;
+  font-size: var(--fontSizePresentatioSubTitle);
+}
+
+.pre3__articles {
+  width: 100% ;
+  align-self: center;
+}
+
+.pre3__art__p1 {
+  margin-bottom: 20px;
+ font-weight: bold;
+}
+
+.pre3__art__p2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.pre3__art__p3 {
+   font-size: var(--fontSizePresentatioSubTitle);
+   /* color: #a7a7a7; */
+}
+
+.pre3__articles:hover {
+  color: red;
+}
+
+.words {
+  margin: auto;
+  width: 70ch;
+}
