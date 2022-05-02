@@ -267,6 +267,11 @@ p {
 
 }
 
+.parallax__paragraph {
+  width: 80ch;
+  justify-self: center;
+}
+
 .parallax__div2 {
   background-image: url(https://www.w3schools.com/howto/img_parallax.jpg);
 
